@@ -59,7 +59,6 @@ jobs:
     uses: Mellanox/cloud-orchestration-reusable-workflows/.github/workflows/fork-ci-reusable.yml@dev
     with:
       registry-internal: ghcr.io/mellanox
-      registry-public: ghcr.io/mellanox
       service-account-username: nvidia-ci-cd
       service-account-email: svc-cloud-orch-gh@nvidia.com
       components: '[{"name": "nicConfigurationOperator", "imageName": "reusable-release-workflows-testing", "Dockerfile": "Dockerfile.test"},
