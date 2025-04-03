@@ -72,7 +72,7 @@ jobs:
     secrets:
       registry-username: ${{ github.repository_owner }}
       registry-token: ${{ secrets.GITHUB_TOKEN }}
-      cicd-gh-token: ${{ secrets.CICD_TOKEN }}
+      cicd-gh-token: ${{ secrets.GITHUB_TOKEN }}
 
   # TODO test that image was made with a new DOCKER_TAG from a specific branch
   validate-pr-with-updated-version-open:
