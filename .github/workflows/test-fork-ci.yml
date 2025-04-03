@@ -114,7 +114,7 @@ jobs:
         env:
           DOCKER_TAG: ${{ needs.call-reusable-ci-fork-workflow.outputs.docker-tag }}
           # TODO make react on public and internal registries if needed
-          DOCKER_REGISTRY: ghcr.io/almaslennikov
+          DOCKER_REGISTRY: ghcr.io/Mellanox
           RELEASE_FILE: hack/release.yaml
         run: |
           make check-release-build
